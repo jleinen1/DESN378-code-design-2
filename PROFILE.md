@@ -22,7 +22,7 @@ Update it once, keep it consistent everywhere.
 
 | Platform | Profile URL | Status |
 |----------|-------------|--------|
-| **GitHub** | `[https://github.com/________](https://github.com/jleinen1)` | ✔︎ |
+| **GitHub** | (https://github.com/jleinen1)` | ✔︎ |
 | **Figma** | `@jleinen1@ewu.edu` | ✔︎ |
 | **CodePen** | https://codepen.io/jleinen1 | ✔︎ |
 | **Portfolio** | *Coming Week 10* | 🔲 |
@@ -63,14 +63,7 @@ Update it once, keep it consistent everywhere.
 
 ## About Me
 
-*Optional: A sentence or two about your design interests. This could seed your eventual portfolio bio.*
-
-<!-- 
-Example: "I'm drawn to motion design and systems thinking. 
-Currently exploring how interaction design can feel more human."
--->
-
----
+I’m interested in design that blends visual storytelling with intention, especially where creativity, emotion, and technology intersect. I enjoy exploring how design can feel both human and thoughtful.
 
 ## Status Key
 
