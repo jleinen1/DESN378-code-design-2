@@ -10,9 +10,9 @@ Update it once, keep it consistent everywhere.
 | Field | Value |
 |-------|-------|
 | **Name** | Justine Leinen
-| **Preferred Name** Justine
-| **Pronouns** she/her
-| **EWU Email** jleinen1@ewu.edu
+| **Preferred Name** | Justine
+| **Pronouns** | she/her
+| **EWU Email** | jleinen1@ewu.edu
 
 ---
 
