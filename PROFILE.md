@@ -22,18 +22,18 @@ Update it once, keep it consistent everywhere.
 
 | Platform | Profile URL | Status |
 |----------|-------------|--------|
-| **GitHub** | `https://github.com/________` | ⏳ |
-| **Figma** | `@________` | ⏳ |
-| **CodePen** | `https://codepen.io/________` | ⏳ |
+| **GitHub** | `[https://github.com/________](https://github.com/jleinen1)` | ✔︎ |
+| **Figma** | `@jleinen1@ewu.edu` | ✔︎ |
+| **CodePen** | https://codepen.io/jleinen1 | ✔︎ |
 | **Portfolio** | *Coming Week 10* | 🔲 |
 
 ---
 
 ## Profile Photo
 
-- [ ] Same photo uploaded to GitHub, Figma, and CodePen
-- [ ] Professional or at least *intentional*
-- [ ] Face visible (helps me learn names!)
+- [ ✔︎ ] Same photo uploaded to GitHub, Figma, and CodePen
+- [ ✔︎ ] Professional or at least *intentional*
+- [ ✔︎ ] Face visible (helps me learn names!)
 
 ---
 
@@ -41,9 +41,9 @@ Update it once, keep it consistent everywhere.
 
 | Item | Status |
 |------|--------|
-| Applied/Renewed | ⏳ |
-| Copilot Access | ⏳ |
-| Expires | <!-- Date --> |
+| Applied/Renewed | ✔︎ |
+| Copilot Access | ✔︎ |
+| Expires | <!-- not sure --> |
 
 👉 [Check status or renew](https://education.github.com/pack)
 
@@ -53,8 +53,8 @@ Update it once, keep it consistent everywhere.
 
 | Item | Status |
 |------|--------|
-| Education Plan Active | ⏳ |
-| Joined Course Team | ⏳ |
+| Education Plan Active | ✔︎ |
+| Joined Course Team | ✔︎ |
 | Expires | <!-- Date --> |
 
 👉 [Check status](https://www.figma.com/settings) → Plan
