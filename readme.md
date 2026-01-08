@@ -2,8 +2,8 @@
 # DESN 378: Code + Design 2
 
 🔗 **[Learning Log] https://jleinen1.github.io/DESN378-code-design-2/
-
 🔗 **[DESN368 Portfolio] https://jleinen1.github.io/desn368-code-and-design-workspace-f25/
+
  _FYI, this is just the URL to your repo; if it's still on Netlify, then use that. _
 
 ---
