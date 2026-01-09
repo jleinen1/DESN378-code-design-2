@@ -44,13 +44,10 @@ console.log("   k");
 
 // Instructions:
 // Gather all ingredients.
-// Bring a large pot of lightly salted water to a boil. Place pasta in the pot,
-// cook for 8 to 12 minutes, until al dente, and drain.
-// Toss cooked pasta with Italian dressing, cucumbers, tomatoes, and green onions
-// in a large bowl.
+// Bring a large pot of lightly salted water to a boil. Place pasta in the pot, cook for 8 to 12 minutes, until al dente, and drain.
+// Toss cooked pasta with Italian dressing, cucumbers, tomatoes, and green onions in a large bowl.
 // Gently mix salad dressing in a bowl.
-// Refrigerate pasta salad until chilled for best results, at least 30 minutes
-// before serving. Enjoy!
+// Refrigerate pasta salad until chilled for best results, at least 30 minutes before serving. Enjoy!
 
 console.log("Ingredients:");
 console.log("16 oz rotini pasta");
@@ -60,6 +57,33 @@ console.log("6 tomatoes");
 console.log("a bunch of green onions");
 
 console.log("Instructions:");
-console.log("1. Gather all ingredients.");
-console.log("2. Bring a large pot of lightly salted water to a boil. Place pasta in the pot, cook for 8 to 12 minutes, until al dente, and drain.");
-console.log("3. Toss cooked pasta with Italian dressing, cucumbers, tomatoes, and green
+console.log(`1. Gather all ingredients.`);
+console.log(`2. Bring a large pot of lightly salted water to a boil. Place pasta in the pot, cook for 8 to 12 minutes, until al dente, and drain.`);
+console.log(`3. Toss cooked pasta with Italian dressing, cucumbers, tomatoes, and green onions in a large bowl.`);
+console.log(`4. Gently mix salad and dressing in a bowl.`);
+console.log(`5. Refrigerate pasta salad until chilled for best results, at least 30 minutes before serving. Enjoy!`);
+
+/* 
+Secret Ingredient 🤫:
+Add some parmesan cheese for extra flavor.
+*/
+
+// --------------------------------------------
+// EXERCISE 5: RECEIPT
+// Format a receipt from a recent purchase
+// --------------------------------------------
+console.log(`
+==================================
+        McDONALD'S RECEIPT
+----------------------------------
+           Order Details
+----------------------------------
+Item         Quantity   Price
+----------------------------------
+McNuggets     1          4.99
+Big Mac       1          5.49
+McFlurry      1          3.29
+----------------------------------
+Total                     13.77
+==================================
+`);
