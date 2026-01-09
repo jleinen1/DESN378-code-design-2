@@ -68,11 +68,17 @@ Secret Ingredient 🤫:
 Add some parmesan cheese for extra flavor.
 */
 
-// --------------------------------------------
-// EXERCISE 5: RECEIPT
-// Format a receipt from a recent purchase
-// --------------------------------------------
-console.log(`
-==================================
+console.log(`==================================
         McDONALD'S RECEIPT
------------
+----------------------------------
+           Order Details
+----------------------------------
+Item         Quantity   Price
+----------------------------------
+McNuggets     1          4.99
+Big Mac       1          5.49
+McFlurry      1          3.29
+----------------------------------
+Total                     13.77
+==================================`);
+
