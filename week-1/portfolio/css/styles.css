@@ -1,1 +1,291 @@
+/* base styles */
+:root {
+  --nav-blue: #1B3C53;
+  --peri: #CBDCEB;
+  --lace: #fdf5e6;
+  --pink: #FFE3E3;
+  --max-width: 1100px;
+}
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", serif;
+  background-color: white;
+  color: var(--nav-blue);
+  line-height: 1.5;
+    background: linear-gradient(
+    135deg,
+    #1B3C5315 0%, 
+    #CBDCEB 30%,    
+    #FFE3E3 100% 
+  );
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: "Playfair Display";
+  color: var(--nav-blue);
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: "Open Sans";
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-family: "Playfair Display";
+  font-size: 1rem;
+}
+
+/* layout stuff */
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+  padding-top: 80px;
+}
+
+/* hero */
+
+.hero {
+  min-height: 100vh;
+  background-image: url("https://snipboard.io/WAdUrD.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-start;   
+  justify-content: flex-start; 
+  padding: 2.5rem;          
+  color: var(--nav-blue);
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  line-height: 1.1;
+  margin: 0;
+  margin-top: 5rem;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.35);
+}
+
+/* about me */
+.about {
+  padding: 3rem 0rem;
+  position: relative;
+}
+
+.about-inner {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+/* about me img */
+.about-image img {
+  width: 260px;
+  max-width: 100%;
+  border-radius: 24px;
+  object-fit: cover;
+  display: block;
+}
+
+/* about me text */
+.about-text h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.about-text p {
+  margin: 0;
+  max-width: 520px;
+}
+
+
+/* top nav */
+.site-header {
+  background-color: var(--nav-blue);
+  color: var(--nav-blue);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.nav-bar {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  font-family: "Open Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: var(--peri);
+}
+
+.nav-links a:hover,
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* projects */
+
+.products {
+  padding: 3rem 0 4rem;
+}
+
+.section-title {
+  margin-bottom: 2rem;
+}
+
+.product-card {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2.75rem;
+  background-color: var(--peri);
+  border-radius: 18px;
+  padding: 1.75rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  position: relative;
+  overflow: hidden;
+}
+
+.hidden-project {
+  display: none;
+}
+
+
+/* alternating layout */
+.product-card:nth-of-type(odd) {
+  flex-direction: row-reverse;
+}
+
+.product-card:nth-of-type(even) {
+  flex-direction: row;
+}
+
+/* project card hover */
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.16);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.product-text,
+.product-image {
+  flex: 1;
+}
+
+.product-text h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.product-text p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.product-text a {
+  color: var(--nav-blue);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.product-image img {
+  width: 100%;
+  display: block;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+/* footer */
+.site-footer {
+  background-color: var(--nav-blue);
+  color: var(--peri);         
+  padding: 2rem 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+}
+
+.site-footer p {
+  margin: 0;
+  opacity: 0.85;
+  letter-spacing: 0.3px;
+}
+
+
+/* media query */
+
+ @media (max-width: 768px) {
+  
+   main {
+    padding: 4.5rem 1rem 3rem;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 4rem 1.5rem 2.5rem;
+    align-items: flex-end;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-top: 0;
+  }
+
+  .about-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product-card {
+    flex-direction: column;
+  }
+}
+
+{
+    text-align: center;
+  }
+
+  .about-text p {
+    max-width: 100%;
+  }
+
+  .product-card {
+    flex-direction: column;
+  }
+
+  .product-card:nth-of-type(odd),
+  .product-card:nth-of-type(even) {
+    flex-direction: column;
+  }
+
+  .product-card:hover {
+    transform: translateY(-2px);
+  }
+}
