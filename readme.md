@@ -30,6 +30,43 @@ This is my workspace for **DESN 378 Code + Design 2** also known as **Web Design
 
 Update this section each week with observations, breakthroughs, and questions.
 
+## Week 0
+​
+### What I Learned
+<!-- What concepts clicked for you? What was new? -->
+I think I gained a pretty solid understanding of using the console. The console exploration exercises/the Codedex stuff was pretty helpful and I was able to get through it smoothly without struggling a lot.
+​
+​
+### What Was Hard
+<!-- What frustrated you? What didn't make sense? -->
+I was a little frustrated when setting up my behavioral layer. I took so long getting my Java Script set up properly in codespace that I got burnt quickly and I am struggling to find the motivation to finish it. I'm not sure why it was so difficult for me, I think I was just exhausted from the first week of school. I think it will get a lot easier and quicker for me as I continue to practice. ​
+​
+### How I Used AI
+<!-- Did you use Copilot, ChatGPT, etc.? How did it help or not help? -->
+Yes! I used ChatGPT to debug when working on my Behavioral Layer set up. It helped a lot! I had a few tiny errors (extra spaces and apostrophes) that I would have never caught on my own. That definitely saved my sanity!​
+​
+### What's Still Unclear
+<!-- What questions do you still have? What needs more practice? -->
+I think I just need to set a aside a few hours to struggle through the rest of my behavioral layer set up assignment. I also definitely need to practice my Java Script skills and get a little more comfortable with setting it up.​
+​
+### Work Completed (Week 0)
+​
+**Engage**
+- [ ] Portfolio Audit
+​
+**Learn**
+- [ x ] Console Explorer
+- [ x ] Codedex Console Fundamentals
+​
+**Reflect**
+- [ x ] Visual Notes: Variables and Strings
+​
+**Build**
+- [ x ] The Setup
+- [ x ] The Behavioral Layer
+​
+---
+
 ### Week 1: Systems That Respond
 *Coming soon...*
 
