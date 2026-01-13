@@ -1,4 +1,3 @@
-```markdown
 # DESN 378: Code + Design 2
 
 🔗 **[Learning Log](https://jleinen1.github.io/DESN378-code-design-2/)**  
@@ -92,6 +91,5 @@ I think I just need to set a aside a few hours to struggle through the rest of m
 ---
 
 *This README will evolve. At quarter's end, it transforms into a portfolio landing page.*
-```
 
 ---
