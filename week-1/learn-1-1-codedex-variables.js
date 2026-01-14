@@ -35,7 +35,15 @@ console.log(activity);
 // 
 // Print them all
 // --------------------------------------------
-​
+const companyName = "Justine's Fun Company"
+const foundingYear = "2025"
+let isActive = "false"
+let fundingAmount = "undefined"
+
+console.log(companyName)
+console.log(foundingYear)
+console.log(isActive)
+console.log(fundingAmount)​
 ​
 ​
 ​
@@ -44,7 +52,9 @@ console.log(activity);
 // Convert Spokane's temperature from °F to °C
 // Formula: (fahrenheit - 32) / 1.8
 // --------------------------------------------
-​
+let temp_f = 56;
+let temp_c = (temp_f - 32) / 1.8;
+console.log(temp_c);​
 ​
 ​
 ​
