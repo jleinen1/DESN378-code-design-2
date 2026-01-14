@@ -52,10 +52,10 @@ console.log(fundingAmount)​
 // Convert Spokane's temperature from °F to °C
 // Formula: (fahrenheit - 32) / 1.8
 // --------------------------------------------
-let temp_f = 56;
+let temp_f = 45;
 let temp_c = (temp_f - 32) / 1.8;
-console.log(temp_c);​
-​
+
+console.log(temp_c);
 ​
 ​
 // --------------------------------------------
@@ -65,10 +65,15 @@ console.log(temp_c);​
 // - tipAmount = billAmount * (tipPercent / 100)
 // - total = billAmount + tipAmount
 // --------------------------------------------
-​
-​
-​
-​
+let billAmount = 42.75; // full bill
+let tipPercent = 18;    // %
+
+let tipAmount = billAmount * (tipPercent / 100);
+let total = billAmount + tipAmount;
+
+console.log("Tip amount:", tipAmount);
+console.log("Total bill:", total);
+​​
 // --------------------------------------------
 // EXERCISE 10: PLAYLIST DURATION
 // Calculate total playlist length
@@ -76,6 +81,16 @@ console.log(temp_c);​
 // - totalMinutes, hours, remainingMinutes
 // Format the output nicely
 // --------------------------------------------
+
+let numberOfSongs = 37;
+let avgSongLength = 3.5; // lenght in minutes
+
+let totalMinutes = numberOfSongs * avgSongLength;
+let hours = Math.floor(totalMinutes / 60);
+let remainingMinutes = Math.round(totalMinutes % 60);
+
+console.log("Total playlist length:");
+console.log(hours + " hours and " + remainingMinutes + " minutes");
 ​
 ​
 ​
