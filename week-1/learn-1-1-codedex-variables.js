@@ -1,7 +1,7 @@
 // ============================================
 // TUTORIAL 1-0: CODEDEX VARIABLES
-// Student: [Your Name]
-// Date: [Date]
+// Student: [Justine]
+// Date: [1/13/25]
 // ============================================
 ​
 // --------------------------------------------
@@ -12,8 +12,22 @@
 // Print them all, then reassign one let variable
 // --------------------------------------------
 ​
-​
-​
+const firstName = "Justine";
+const state = "WA";
+
+let zodiacSign = "scorpio";
+let activity = "online";
+
+console.log("user profile: ");
+console.log(firstName);
+console.log(state);
+console.log(zodiacSign);
+console.log(activity);
+
+zodiacSign = "scorpio";
+activity = "offline";
+console.log(state);
+console.log(activity);
 ​
 // --------------------------------------------
 // EXERCISE 7: DATA TYPES
