@@ -64,6 +64,19 @@ main {
   text-shadow: 0 2px 12px rgba(0,0,0,0.35);
 }
 
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 /* about me */
 .about {
   padding: 3rem 0rem;
