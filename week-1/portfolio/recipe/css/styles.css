@@ -1,0 +1,35 @@
+main {
+  max-width: 800px; 
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+body {
+  background-color: #E8BCB9;
+  font-family: "Montserrat";
+  font-size: 16px;
+  color: #432E54;
+}
+
+h1, h2, h3 {
+  font-family: "Libre Bodoni";
+  color: #4B4376;
+}
+
+h1 { font-size: 56px; }
+h2 { font-size: 36px; }
+h3 { font-size: 28px; }
+
+a {
+  color: #AE445A;   
+  text-decoration: none;
+}
+
+
+img {
+  max-width: 300px;  
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
