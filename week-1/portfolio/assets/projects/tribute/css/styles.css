@@ -1,0 +1,82 @@
+body {
+  font-family:'Open Sans', Sans Serif;
+  background-image: url("https://snipboard.io/u1PMnp.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  border-radius: 10px;
+  
+}
+
+h1 {
+  font-family: 'Playfair Display', Serif;
+  font-size: 28px;
+  text-align: center;
+  color: #283C4C
+}
+
+h2 {
+  font-family: 'Open Sans', Sans Serif;
+  font-size: 18x;
+  font-weight: 600;
+  text-align: center;
+  color: #283C4C
+}
+
+blockquote {
+  color: #283C4C;
+  font-style: italic;
+  text-align: center;
+  text-size: 15px;
+}
+
+section {
+  background-color: #dce8dc;
+  padding: 25px 30px;
+  text-color: #283C4C;
+  margin: 20px 0;
+}
+
+h3 {
+  text-align: left;
+  color: #283C4C;
+  font-size: 32px;
+  font-family: 'Playfair Display', serif;
+}
+
+p {
+  font-syle: 'Open Sans';
+  text-align: left;
+  color: #283C4C;
+  text-size: 16px;
+}
+
+.portrait {
+  display: block;  
+  margin: 25px auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+figcaption {
+  text-size: 5px;
+  text-align: center;
+  color: #283C4C;
+}
+
+ul {
+  text-size: 16px;
+  color: #283C4C;
+}
+
+a {
+  color: #D90166;
+  text-decoration: none;
