@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* variables */
+  --container-max-width: 1200px;
+  --sidebar-width: 300px;
+  --sidebar-min-width: 220px;
+  --page-gutter: 1rem;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #d4f3f1;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #0E0F12;
+}
+
+/* type */
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.6rem, 4.5vw, 3rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.05;
+  margin: 1.25rem;
+  padding: 1.25rem;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  color: #0E0F12;
+  font-size: clamp(1.25rem, 3.8vw, 2.25rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: clamp(1rem, 2.8vw, 1.5rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.15;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+/* code blocks should wrap on small screens?? */
+code {
+  font-size: 0.95rem;
+  max-width: 100%;
+  display: block;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* main flexbox container (full width but constrained with max-width,
+   centered so layout shrinks naturally on phones) */
+.container {
+  display: flex;
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  gap: 2rem;
+  min-height: calc(100vh - 2rem);
+  align-items: flex-start;
+  padding: var(--page-gutter);
+  flex-wrap: nowrap;
+}
+
+/* nav/sidebar */
+.sidebar {
+  background: #111;
+  color: white;
+  width: var(--sidebar-width);
+  min-width: var(--sidebar-min-width);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: auto; 
+  border-radius: 8px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 1rem;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* content flex */
+.content {
+  flex: 1;
+  padding: 1.25rem;
+  background-color: transparent; 
+  min-width: 0; 
+}
+
+/* hero */
+.hero {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  /* local override for hero title — still fluid */
+  font-size: clamp(1.25rem, 6vw, 1.6rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* section chunks */
+section {
+  background: #b7ebe6;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+section img {
+  margin-top: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 3px;
+}
+
+section ul {
+  padding-left: 1.5rem;
+  margin-left: 0;
+}
+
+/* footer */
+.footer {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.footer button {
+  background: #111;
+  color: white;
+  border: none;
+  padding: 0.7rem 1rem;
+  margin: 0.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.footer p {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: #444;
+}
+
+/* iphone media query */
+@media (max-width: 640px) {
+  .container {
+    flex-direction: column;
+    padding: 0.5rem;
+    gap: 1rem;
+  }
+
+  /* transform sidebar into a horizontal/top nav area on small devices */
+  .sidebar {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    position: relative;
+    padding: 0.5rem 0;
+    background: transparent;
+    color: #0E0F12;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .sidebar ul {
+    display: flex;
+    gap: 1rem;
+    padding-left: 0.5rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .sidebar li {
+    margin-bottom: 0;
+    white-space: nowrap;
+  }
+
+  .sidebar a {
+    color: #0E0F12;
+    padding: 0.5rem;
+    display: inline-block;
+    font-size: 0.95rem;
+  }
+
+  .content {
+    padding: 0.75rem;
+  }
+
+  .hero img, section img {
+    max-width: 100%;
+    height: auto;
+  }
