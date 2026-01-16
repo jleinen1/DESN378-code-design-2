@@ -11,16 +11,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", serif;
-  background-color: white;
+  background-color: var(--lace);
   color: var(--nav-blue);
   line-height: 1.5;
-    background: linear-gradient(
-    135deg,
-    #1B3C5315 0%, 
-    #CBDCEB 30%,    
-    #FFE3E3 100% 
-  );
-  background-attachment: fixed;
 }
 
 h1 {
@@ -52,7 +45,7 @@ main {
 
 .hero {
   min-height: 100vh;
-  background-image: url("https://snipboard.io/WAdUrD.jpg");
+  background-color: var(--lace);
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -260,15 +253,6 @@ main {
 
   .about-inner {
     flex-direction: column;
-    text-align: center;
-  }
-
-  .product-card {
-    flex-direction: column;
-  }
-}
-
-{
     text-align: center;
   }
 
