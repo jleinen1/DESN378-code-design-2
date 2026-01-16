@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Thorn & Thread</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- font: bebas -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poller+One&family=Special+Gothic:wght@400..700&display=swap" rel="stylesheet">
+  
+    <!-- font: open sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poller+One&family=Special+Gothic:wght@400..700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <!-- top nav bar -->
+ <header id="header" class="site-header">
+  <div class="nav-bar">
+    <nav id="nav-bar">
+      <ul class="nav-links">
+        <li><a class="nav-link" href="#hero">Home</a></li>
+        <li><a class="nav-link" href="#features">Products</a></li>
+        <li><a class="nav-link" href="#data">Sizing</a></li>
+        <li><a class="nav-link" href="#contact">Mailing List</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+        
+
+  <main>
+    <!-- hero -->
+    <section id="hero" class="hero">
+      <div class="hero-inner">
+        <div class="hero-text-card">
+          <h1>Thorn &amp; Thread</h1>
+          <p>Distressed, detailed, and designed to outlive trends.</p>
+          <button class="primary-btn">Shop</button>
+        </div>
+
+        <div class="hero-image">
+          <!-- hero img -->
+          <img src="https://snipboard.io/shQF5N.jpg" alt="Person wearing Thorn &amp; Thread hoodie" />
+        </div>
+      </div>
+    </section>
+
+    <!-- video section -->
+    <section class="video-section">
+     <!-- border -->
+     <div class="checkered-frame">
+       <!-- spacing  -->
+       <div class="video-inner">
+         <!-- responsiveness -->
+         <div class="video-wrapper">
+            <iframe
+          id="video" src="https://www.youtube.com/embed/ptdxYW32Xds?si=nYRcKa0CZK-k3dp_"
+title="Thorn &amp; Thread lookbook" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+   
+
+    <!-- products/feat cards -->
+    <section id="features" class="products">
+      <h2 class="section-title">Products</h2>
+
+      <!-- feat card 1 -->
+      <article class="product-card">
+        <div class="product-text">
+          <h3>Thorn & Thread Essential Tee</h3>
+          <p>Built for the everyday wearer who wants comfort without losing edge.</p>
+        </div>
+        <div class="product-image">
+          <img src="https://snipboard.io/fqS4WQ.jpg" alt="Back of moth hoodie"/>
+        </div>
+      </article>
+
+      <!-- feat card 2 -->
+      <article class="product-card">
+        <div class="product-image">
+          <img src="https://snipboard.io/oAjKU6.jpg" alt="Model wearing Steel &amp; Petal hoodie"/>
+        </div>
+        <div class="product-text">
+          <h3>Steel &amp; Petal Hoodie</h3>
+          <p>Captures Thorn &amp; Thread's signature duality: warmth on the inside, strength on the outside.</p>
+        </div>
+      </article>
+
+      <!-- feat card 3 -->
+      <article class="product-card">
+        <div class="product-text">
+          <h3>Thorn &amp; Lace Cargo Pants</h3>
+          <p>Designed for movement, expression, and durability.</p>
+        </div>
+        <div class="product-image">
+          <img src="https://snipboard.io/4mHP7d.jpg" alt="Model wearing Thorn &amp; Lace cargo pants"/>
+        </div>
+      </article>
+    </section>
+
+    <!-- sizing chart -->
+    <section id="data" class="sizing">
+      <h2 class="section-title">Sizing Chart</h2>
+      <div class="table-wrapper">
+        <table id="data-table">
+          <thead>
+            <tr>
+              <th scope="col">Size</th>
+              <th scope="col">Chest (in)</th>
+              <th scope="col">Waist (in)</th>
+              <th scope="col">Hip (in)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>XS</td>
+              <td>31–33</td>
+              <td>24–26</td>
+              <td>34–36</td>
+            </tr>
+            <tr>
+              <td>S</td>
+              <td>34–36</td>
+              <td>27–29</td>
+              <td>37–39</td>
+            </tr>
+            <tr>
+              <td>M</td>
+              <td>37–39</td>
+              <td>30–32</td>
+              <td>40–42</td>
+            </tr>
+            <tr>
+              <td>L</td>
+              <td>40–42</td>
+              <td>33–35</td>
+              <td>43–45</td>
+            </tr>
+            <tr>
+              <td>XL</td>
+              <td>43–45</td>
+              <td>36–38</td>
+              <td>46–48</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+<!-- contact form -->
+<section id="contact" class="mailing-list">
+  <div class="mailing-bg">
+    <div class="mailing-overlay">
+      <h2>Join the Mailing List!</h2>
+
+      <form
+        id="contact-form"
+        class="mailing-form"
+        action="https://example.com/subscribe"
+        method="post">
+
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email"/>
+
+        <label for="phone">Phone Number:</label>
+        <input id="phone" name="phone" type="tel"/>
+
+        <button id="submit" class="primary-btn">Sign Up</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+
+  <!-- footer -->
+  <footer class="site-footer">
+    <p>Thorn & Thread</p>
+  </div>
+</footer>
+
+</body>
+</html>
