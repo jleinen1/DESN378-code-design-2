@@ -1,0 +1,23 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #fdf5e6;
+  text-align: center;
+}
+
+.story-container {
+  max-width: 600px;
+  margin: 3rem auto;
+}
+
+.story-image img {
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.story-image img:hover {
+  transform: scale(1.0);
+}
+
+
+
