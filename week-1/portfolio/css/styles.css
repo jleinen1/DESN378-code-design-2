@@ -81,35 +81,40 @@ main {
 
 /* about me */
 .about {
-  padding: 2rem 0 3rem;
-  position: relative;
+  padding: 2rem 0 3.5rem;
 }
 
 .about-inner {
-  max-width: 900px;
+  max-width: 900px;        
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
+  gap: 3rem;
   text-align: left;
 }
 
-/* about me img */
+/* about me image */
+.about-image {
+  flex: 0 0 420px;   
+}
+
 .about-image img {
-  width: 400px;
-  max-width: 100%;
-  border-radius: 24px;
+  width: 100%;
+  height: auto;
+  border-radius: 28px;
   object-fit: cover;
   display: block;
 }
 
 /* about me text */
 .about-text h2 {
-  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
 }
 
 .about-text p {
+  margin: 0;
+  max-width: 520px;
   font-size: 1.05rem;
   line-height: 1.7;
 }
