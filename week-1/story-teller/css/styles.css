@@ -1,6 +1,6 @@
 body {
-  font-family: sans-serif;
-  background: #fcd7d7
+  font-family: system-ui, sans-serif;
+  background: #fdf5e6;
   text-align: center;
 }
 
@@ -9,14 +9,26 @@ body {
   margin: 3rem auto;
 }
 
+.story-image {
+  display: flex;
+  justify-content: center;
+}
+
 .story-image img {
   width: 100%;
+  cursor: pointer;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  max-width: 420px;
+  height: auto;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .story-image img:hover {
   transform: scale(1.03);
 }
+
+
+
 
 
 
