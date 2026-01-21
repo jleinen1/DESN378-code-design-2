@@ -45,7 +45,7 @@ main {
 /* hero */
 
 .hero {
-  min-height: 65vh;
+  min-height: 60vh;
   background-color: var(--lace);
   background-size: cover;
   background-position: bottom;
@@ -81,12 +81,12 @@ main {
 
 /* about me */
 .about {
-  padding: 1.5rem 0 3rem;
+  padding: 2rem 0 3rem;
   position: relative;
 }
 
 .about-inner {
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -97,7 +97,7 @@ main {
 
 /* about me img */
 .about-image img {
-  width: 340px;
+  width: 400px;
   max-width: 100%;
   border-radius: 24px;
   object-fit: cover;
@@ -106,13 +106,12 @@ main {
 
 /* about me text */
 .about-text h2 {
-  margin-top: 0;
-  margin-bottom: 0.75rem;
+  font-size: 2rem;
 }
 
 .about-text p {
-  margin: 0;
-  max-width: 520px;
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
 
