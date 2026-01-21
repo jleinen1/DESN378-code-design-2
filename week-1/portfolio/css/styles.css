@@ -172,7 +172,7 @@ main {
   display: flex;
   gap: 2rem;
   margin-bottom: 2.75rem;
-  background-color: var(--peri);
+  background-color: var(--pink);
   border-radius: 18px;
   padding: 1.75rem;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
