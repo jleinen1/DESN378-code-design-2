@@ -4,21 +4,21 @@
 ### Work Completed (Week 1)
 
 **Engage**
-- [ x ] VS Code Theme Setup
+- [x] VS Code Theme Setup
 
 **Learn**
-- [ x ] Codedex.io Variables
+- [x] Codedex.io Variables
 - [ ] HTML Academy 
 
 **Practice**
-- [ x ] The Story Teller
+- [x] The Story Teller
 
 **Build**
-- [ x ] Portfolio Migration
-- [ x  Portfolio in Figma + Style Tile
+- [x] Portfolio Migration
+- [x]  Portfolio in Figma + Style Tile
 
 **Reflect**
-- [ x ] Visual Notes: Week 1---
+- [x] Visual Notes: Week 1---
 
 
 ​
