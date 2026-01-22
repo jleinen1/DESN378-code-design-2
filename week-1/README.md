@@ -42,14 +42,3 @@ I used ChatGPT to help me because I made some silly syntax errors. I kept readin
 I definitely need to keep practicing writing JavaScript. The console log still freaks me out a little bit so I would like to get more comfortable with it.
 
 
-## What to include
-
-- Assignment submissions
-- Experiments and explorations
-- Notes and reflections
-
-## This week's focus
-
-- Design tokens (CSS Custom Properties)
-- Theme toggle
-- `querySelector` and `addEventListener`
