@@ -46,7 +46,6 @@ if (hour < 10) {
 } else {
   console.log("Good afternoon!");
 }​
-​
 ​​
 // --------------------------------------------
 // EXERCISE 14: pH LEVELS
@@ -61,9 +60,7 @@ if (ph > 7) {
   console.log("acidic");
 } else {
   console.log("neutral");
-}​
-​
-​
+}​​
 ​
 // --------------------------------------------
 // EXERCISE 15: MAGIC 8 BALL
@@ -100,21 +97,64 @@ if (randomNumber === 2){
 }
 
 console.log("Question: ", question);
-console.log("Answer:   ", answer);​
-​
-​
+console.log("Answer:   ", answer);​​
 // --------------------------------------------
 // EXERCISE 16: AIR QUALITY INDEX
 // Check AQI ranges using logical operators
 // 0-50: Good, 51-100: Moderate, etc.
 // --------------------------------------------
-​
-​
-​
-​
+const aqi = 100;
+
+if (aqi >= 0 && aqi <= 50) {
+  console.log("good");
+} else if (aqi >= 51 && aqi <= 100) {
+  console.log("moderate");
+} else if (aqi >= 101 && aqi <= 150) {
+  console.log("unhealthy (sensitive groups)");
+} else if (aqi >= 151 && aqi <= 200) {
+  console.log("unhealthy");
+} else if (aqi >= 201 && aqi <= 300) {
+  console.log("very unhealthy");
+} else {
+  console.log("hazardous");
+}​
+​​
 // --------------------------------------------
 // EXERCISE 17: ROCK PAPER SCISSORS
 // Player picks 0, 1, or 2
 // Computer picks random 0-2
 // Determine winner using conditionals
 // --------------------------------------------
+const player = 1; // choose 0, 1, or 2
+const computer = Math.floor(Math.random() * 3); // 0, 1, or 2
+
+console.log("Player:", player);
+console.log("Computer:", computer);
+
+if (player === 0) {
+  if (computer === 0) {
+    console.log("tie!");
+  } else if (computer === 1) {
+    console.log("computer won!");
+  } else {
+    console.log("player won!");
+  }
+} else if (player === 1) {
+  if (computer === 0) {
+    console.log("player won!");
+  } else if (computer === 1) {
+    console.log("tie!");
+  } else {
+    console.log("computer won!");
+  }
+} else if (player === 2) {
+  if (computer === 0) {
+    console.log("computer won!");
+  } else if (computer === 1) {
+    console.log("player won!");
+  } else {
+    console.log("tie!");
+  }
+} else {
+  console.log("error");
+}
