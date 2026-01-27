@@ -1,60 +1,123 @@
+/* ============================================
+   DESIGN TOKENS
+   ============================================ */
 
-/* base styles */
+/* Color Primitives */
 :root {
-  --nav-blue: #1B3C53;
-  --peri: #CBDCEB;
-  --lace: #fdf5e6;
-  --pink: #FFE3E3;
+  --peri: #cbdceb;
+  --pippin: #ffe3e3;
+  --old-lace: #fdf5e6;
+  --nile-blue: #1b3c53;
+}
+
+/* Brand Colors - Light Mode */
+:root {
+  --background-bg-main: var(--old-lace);
+  --background-bg-card: var(--pippin);
+  --background-bg-nav: var(--nile-blue);
+  --background-bg-footer: var(--nile-blue);
+  --text-text-primary: var(--nile-blue);
+  --text-text-inverse: var(--peri);
+  --text-text-muted: var(--peri);
+  --accent-accent-primary: var(--peri);
+  --accent-accent-soft: var(--pippin);
+}
+
+/* Typography */
+:root {
+  --font-family-body: "Open Sans", sans-serif;
+  --font-family-heading: "Playfair Display", serif;
+  
+  --font-size-text-sm: 0.875rem;    /* 14px */
+  --font-size-text-md: 1rem;        /* 16px */
+  --font-size-text-lg: 1.5rem;      /* 24px */
+  --font-size-text-xl: 2.25rem;     /* 36px */
+  
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  --spacing-space-2: 0.5rem;   /* 8px */
+  --spacing-space-4: 1rem;     /* 16px */
+  --spacing-space-6: 1.5rem;   /* 24px */
+  --spacing-space-8: 2rem;     /* 32px */
+  --spacing-space-12: 3rem;    /* 48px */
+  
   --max-width: 1100px;
 }
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", serif;
-  background-color: var(--lace);
-  color: var(--nav-blue);
+  font-family: var(--font-family-body);
+  background-color: var(--background-bg-main);
+  color: var(--text-text-primary);
   line-height: 1.5;
+  font-size: var(--font-size-text-md);
+}
+
+body.dark {
+  --background-bg-main: #1b3c53;
+  --background-bg-card: #cbdceb;
+  --background-bg-nav: #ffe3e3;
+  --background-bg-footer: #ffe3e3;
+  --text-text-primary: #fdf5e6;
+  --text-text-inverse: #1b3c53;
+  --text-text-muted: #cbdceb;
+  --color: #ffffff;
+  --accent-accent-primary: #cbdceb;
+  --accent-accent-soft: #ffe3e3;
 }
 
 h1 {
-  font-family: "Playfair Display";
-  color: var(--nav-blue);
+  font-family: var(--font-family-heading);
+  color: var(--text-text-primary);
   font-size: 3rem;
+  font-weight: var(--font-weight-bold);
 }
 
 h2 {
-  font-family: "Open Sans";
-  font-size: 1.5rem;
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-text-lg);
+  font-weight: var(--font-weight-semibold);
 }
 
 h3 {
-  font-family: "Playfair Display";
-  font-size: 1rem;
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-text-md);
+  font-weight: var(--font-weight-semibold);
 }
 
-/* layout stuff */
+/* ============================================
+   LAYOUT
+   ============================================ */
 
 main {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 1.5rem 4rem;
+  padding: 0 var(--spacing-space-6) var(--spacing-space-8);
   padding-top: 40px;
 }
 
-/* hero */
+/* ============================================
+   HERO SECTION
+   ============================================ */
 
 .hero {
   min-height: 60vh;
-  background-color: var(--lace);
+  background-color: var(--background-bg-main);
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
   display: flex;
-  align-items: flex-start;   
-  justify-content: flex-start; 
-  padding: 2rem;          
-  color: var(--nav-blue);
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--spacing-space-8);
+  color: var(--text-text-primary);
 }
 
 .hero-image {
@@ -63,24 +126,26 @@ main {
   object-fit: contain;
 }
 
-/* about me */
+/* ============================================
+   ABOUT SECTION
+   ============================================ */
+
 .about {
-  padding-top: 1.5rem;
+  padding-top: var(--spacing-space-6);
   padding-bottom: 2.5rem;
 }
 
 .about-inner {
-  max-width: 900px;        
+  max-width: 900px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: var(--spacing-space-12);
   text-align: left;
 }
 
-/* about me image */
 .about-image {
-  flex: 0 0 420px;   
+  flex: 0 0 420px;
 }
 
 .about-image img {
@@ -91,7 +156,6 @@ main {
   display: block;
 }
 
-/* about me text */
 .about-text h2 {
   margin-top: 0;
   margin-bottom: 0.75rem;
@@ -104,11 +168,13 @@ main {
   line-height: 1.7;
 }
 
+/* ============================================
+   NAVIGATION
+   ============================================ */
 
-/* top nav */
 .site-header {
-  background-color: var(--nav-blue);
-  color: var(--nav-blue);
+  background-color: var(--background-bg-nav);
+  color: var(--text-text-inverse);
   position: fixed;
   top: 0;
   left: 0;
@@ -119,7 +185,7 @@ main {
 .nav-bar {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem var(--spacing-space-6);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,19 +194,20 @@ main {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: var(--spacing-space-6);
   margin: 0;
   padding: 0;
 }
 
 .nav-links a {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: var(--font-family-body);
   text-transform: uppercase;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: var(--font-size-text-sm);
   letter-spacing: 0.06em;
   text-decoration: none;
-  color: var(--peri);
+  color: var(--text-text-inverse);
+  font-weight: var(--font-weight-regular);
 }
 
 .nav-links a:hover,
@@ -148,21 +215,23 @@ main {
   text-decoration: underline;
 }
 
-/* projects */
+/* ============================================
+   PROJECTS SECTION
+   ============================================ */
 
 .products {
- padding-top: 2rem;
+  padding-top: var(--spacing-space-8);
 }
 
 .section-title {
-  margin-bottom: 2rem;
+  margin-bottom: var(--spacing-space-8);
 }
 
 .product-card {
   display: flex;
-  gap: 2rem;
+  gap: var(--spacing-space-8);
   margin-bottom: 2.75rem;
-  background-color: var(--pink);
+  background-color: var(--background-bg-card);
   border-radius: 18px;
   padding: 1.75rem;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
@@ -174,8 +243,7 @@ main {
   display: none;
 }
 
-
-/* alternating layout */
+/* Alternating layout */
 .product-card:nth-of-type(odd) {
   flex-direction: row-reverse;
 }
@@ -184,7 +252,7 @@ main {
   flex-direction: row;
 }
 
-/* project card hover */
+/* Project card hover */
 .product-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.16);
@@ -207,8 +275,8 @@ main {
 }
 
 .product-text a {
-  color: var(--nav-blue);
-  font-weight: 600;
+  color: var(--text-text-primary);
+  font-weight: var(--font-weight-semibold);
   text-decoration: underline;
 }
 
@@ -219,14 +287,17 @@ main {
   object-fit: cover;
 }
 
-/* footer */
+/* ============================================
+   FOOTER
+   ============================================ */
+
 .site-footer {
-  background-color: var(--nav-blue);
-  color: var(--peri);         
-  padding: 2rem 1rem;
-  font-family: "Open Sans", sans-serif;
-  font-size: 0.9rem;
-  margin-top: 4rem;
+  background-color: var(--background-bg-footer);
+  color: var(--text-text-inverse);
+  padding: var(--spacing-space-8) var(--spacing-space-4);
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-text-sm);
+  margin-top: var(--spacing-space-8);
 }
 
 .site-footer p {
@@ -235,18 +306,18 @@ main {
   letter-spacing: 0.3px;
 }
 
+/* ============================================
+   MEDIA QUERIES
+   ============================================ */
 
-/* media query */
-
- @media (max-width: 768px) {
-
-   main {
-    padding: 4.5rem 1rem 3rem;
+@media (max-width: 768px) {
+  main {
+    padding: 4.5rem var(--spacing-space-4) var(--spacing-space-12);
   }
 
   .hero {
     min-height: auto;
-    padding: 4rem 1.5rem 2.5rem;
+    padding: var(--spacing-space-8) var(--spacing-space-6) 2.5rem;
     align-items: flex-end;
   }
 
