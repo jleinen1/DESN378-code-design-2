@@ -1,18 +1,31 @@
 # Week 2: The Memory
+​
+### What I Learned
+I learned a lot about variables this week and how to use Figma's variable feature. I also learned 
+​
+### What Was Hard
+I don't have the clearest idea of how I am going to translate my Figma variables into code properly, but I think it will make more sense to me this week.
+​
+### How I Used AI
+I used Chat to help me with the Codedex conditionals. It helped get me on the right track so I could start writing the code myself.
+​
+### What's Still Unclear
+I think I will need to practice conditionals a lot more before I fully grasp the concept.
 
-Add your Week 2 work here.
+**Engage**
+- [x] VS Code Theme Setup
 
-## What to include
+**Learn**
+- [x] Codedex.io Conditionals
+- [x] figma variables
 
-- Assignment submissions
-- Experiments and explorations
-- Notes and reflections
+**Practice**
+- [x] The Switch
 
-## This week's focus
+**Build**
+- [ ] The Foundation
+- [x] Portfolio in Figma + Style Tile
 
-- `localStorage` for persistence
-- `prefers-color-scheme` detection
-- `prefers-reduced-motion` accessibility
-
-# Learning Log
+**Reflect**
+- [ ] Visual Notes: Week 2---
 ​
