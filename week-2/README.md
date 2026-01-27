@@ -10,7 +10,7 @@ I don't have the clearest idea of how I am going to translate my Figma variables
 I used Chat to help me with the Codedex conditionals. It helped get me on the right track so I could start writing the code myself.
 ​
 ### What's Still Unclear
-I think I will need to practice conditionals a lot more before I fully grasp the concept.
+I need more practice with conditionals. Especially the random.math() function.
 
 **Engage**
 - [x] VS Code Theme Setup
