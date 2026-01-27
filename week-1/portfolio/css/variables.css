@@ -1,1 +1,61 @@
+:root {
+  /* COLOR-PRIMITIVES */
+  --peri: #cbdceb;
+  --pippin: #ffe3e3;
+  --old-lace: #fdf5e6;
+  --nile-blue: #1b3c53;
 
+  /* BRAND-COLORS */
+  --background-bg-main-light: #fdf5e6;
+  --background-bg-main-dark: #1b3c53;
+  --background-bg-card-light: #ffe3e3;
+  --background-bg-card-dark: #cbdceb;
+  --background-bg-nav-light: #1b3c53;
+  --background-bg-nav-dark: #ffe3e3;
+  --background-bg-footer-light: #1b3c53;
+  --background-bg-footer-dark: #ffe3e3;
+  --text-text-primary-light: #1b3c53;
+  --text-text-primary-dark: #fdf5e6;
+  --text-text-inverse-light: #cbdceb;
+  --text-text-inverse-dark: #1b3c53;
+  --text-text-muted-light: #cbdceb;
+  --text-text-muted-dark: #cbdceb;
+  --color-light: #ffffff;
+  --color-dark: #ffffff;
+  --accent-accent-primary-light: #cbdceb;
+  --accent-accent-primary-dark: #cbdceb;
+  --accent-accent-soft-light: #ffe3e3;
+  --accent-accent-soft-dark: #ffe3e3;
+
+  /* TYPOGRAPHY */
+  --font-family-body: ""open sans"";
+  --font-family-heading: ""playfair display"";
+  --font-size-text-sm: 14px;
+  --font-size-text-sm-rem: 0.875rem;
+  --font-size-text-md: 16px;
+  --font-size-text-md-rem: 1rem;
+  --font-size-text-lg: 24px;
+  --font-size-text-lg-rem: 1.5rem;
+  --font-size-text-xl: 36px;
+  --font-size-text-xl-rem: 2.25rem;
+  --font-weight-weight-regular: 400;
+  --font-weight-weight-semibold: 600;
+  --font-weight-wieght-bold: 700;
+  --delete-space-2: #ffffff;
+  --spacing-space-2: 8px;
+  --spacing-space-2-rem: 0.5rem;
+  --spacing-space-4: 16px;
+  --spacing-space-4-rem: 1rem;
+  --spacing-space-6: 24px;
+  --spacing-space-6-rem: 1.5rem;
+  --spacing-space-8: 32px;
+  --spacing-space-8-rem: 2rem;
+  --spacing-space-12: 48px;
+  --spacing-space-12-rem: 3rem;
+
+  /* NAVIGATION */
+  --color-nav-bg: "brand_colors.bg-nav";
+  --color-nav-text: "brand_colors.text-inverse";
+  --layout-nav-padding: "spacing.space-6";
+  --layout-nav-text: "spacing.space-4";
+}
