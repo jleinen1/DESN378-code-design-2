@@ -60,7 +60,8 @@ body {
   font-size: var(--font-size-text-md);
 }
 
-body.dark {
+/* dark mode */
+[data-theme="dark"] {
   --background-bg-main: #1b3c53;
   --background-bg-card: #cbdceb;
   --background-bg-nav: #ffe3e3;
@@ -68,10 +69,10 @@ body.dark {
   --text-text-primary: #fdf5e6;
   --text-text-inverse: #1b3c53;
   --text-text-muted: #cbdceb;
-  --color: #ffffff;
   --accent-accent-primary: #cbdceb;
   --accent-accent-soft: #ffe3e3;
 }
+
 
 h1 {
   font-family: var(--font-family-heading);
