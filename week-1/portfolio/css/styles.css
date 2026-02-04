@@ -217,6 +217,45 @@ main {
   text-decoration: underline;
 }
 
+.theme-toggle {
+  background: transparent;
+  border: 1px solid var(--text-text-inverse);
+  border-radius: 999px;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color 160ms ease, border-color 160ms ease;
+}
+
+.theme-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--accent-accent-primary);
+  outline-offset: 2px;
+}
+
+.theme-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* moon emoji */
+html[data-theme="light"] .theme-icon::before {
+  content: "🌙";
+}
+
+/* sun emoji */
+html[data-theme="dark"] .theme-icon::before {
+  content: "☀️";
+}
+
+
 /* ============================================
    PROJECTS SECTION
    ============================================ */
