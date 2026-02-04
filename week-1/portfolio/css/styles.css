@@ -73,7 +73,6 @@ body {
   --accent-accent-soft: #ffe3e3;
 }
 
-
 h1 {
   font-family: var(--font-family-heading);
   color: var(--text-text-primary);
@@ -216,15 +215,19 @@ main {
   text-decoration: underline;
 }
 
+/* ============================================
+   THEME TOGGLE PILL
+   ============================================ */
+
 .theme-toggle {
   display: flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.5rem;
 
-  padding: 0.35rem 0.5rem;
+  padding: 0.35rem 0.75rem;
   border-radius: 999px;
 
-  background-color: var(--bg-card);
+  background-color: var(--background-bg-card);
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   cursor: pointer;
@@ -234,18 +237,14 @@ main {
 .theme-toggle .icon {
   font-size: 1rem;
   line-height: 1;
-
   padding: 0.35rem;
   border-radius: 50%;
 
   opacity: 0.4;
-  transition: 
-    opacity 200ms ease,
-    background-color 200ms ease,
-    transform 200ms ease;
+  transition: opacity 200ms ease, background-color 200ms ease, transform 200ms ease;
 }
 
-/* state activation */
+/* Active state: highlight correct icon */
 html[data-theme="light"] .theme-toggle .sun {
   opacity: 1;
   background-color: var(--accent-accent-primary);
@@ -255,22 +254,6 @@ html[data-theme="dark"] .theme-toggle .moon {
   opacity: 1;
   background-color: var(--accent-accent-primary);
 }
-
-.theme-icon {
-  font-size: 1rem;
-  line-height: 1;
-}
-
-/* moon emoji */
-html[data-theme="light"] .theme-icon::before {
-  content: "🌙";
-}
-
-/* sun emoji */
-html[data-theme="dark"] .theme-icon::before {
-  content: "☀️";
-}
-
 
 /* ============================================
    PROJECTS SECTION
@@ -412,4 +395,3 @@ html[data-theme="dark"] .theme-icon::before {
     animation: none !important;
   }
 }
-
