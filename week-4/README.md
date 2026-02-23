@@ -17,8 +17,9 @@
 ### What's Still Unclear
 <!-- Questions that remain -->
 
-### Work Completed
+# Work Completed
 
+###
 - [x] variables.css exists
 - [x] Color tokens defined
 - [x] Typography tokens defined
