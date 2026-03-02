@@ -224,28 +224,27 @@ body {
 #ch2 .drops img:nth-child(2) { margin-top: 3rem; }
 #ch2 .drops img:nth-child(3) { margin-top: 1rem; }
 
-/* =========================
-   ch3: conditionals */
+/* ch3: conditionals */
 
 #ch3 .ch3-roots,
 #ch3 .ch3-watering-can,
 #ch3 .ch3-drop {
-  position: absolute;
-  z-index: 1;
+position: absolute;
+z-index: 1;
 }
 
 #ch3 .ch3-roots {
-  width: 33%;
-  right: 8%;
-  bottom: 0;
+width: 33%;
+right: 8%;
+bottom: 0;
 }
 
 #ch3 .ch3-roots img {
-  width: 100%;
-  display: block;
+width: 100%;
+display: block;
 }
 
-/* watering-can: upper-right above the plant */
+/* watering-can */
 #ch3 .ch3-watering-can {
   width: 21%;
   right: 5%;
@@ -311,17 +310,17 @@ body {
     min-height: 320px;
   }
 
-  #ch1 .chapter-visual img[alt="A seed packet"] {
-    position: relative;
-    width: 65%;
-    right: auto;
-    bottom: auto;
-    margin: var(--space-lg) auto 0;
-    display: block;
-  }
+#ch1 .chapter-visual img[alt="A seed packet"] {
+position: absolute;
+width: 55%;
+right: 4%;
+top: 8%;
+transform: rotate(-14deg);
+transform-origin: top right;
+}
 
   #ch1 .chapter-visual img[alt="seeds"] {
-    display: none;
+  display: none;
   }
 
   #ch2 .ch2-roots,
