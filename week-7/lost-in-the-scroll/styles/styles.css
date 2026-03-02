@@ -154,7 +154,7 @@ body {
   position: absolute;
   width: 40%;
   left: 10%;
-  top: 18%;
+  top: 16%;
   transform: rotate(14deg);
   transform-origin: top left;
 }
@@ -167,7 +167,7 @@ body {
 }
 
 /* =========================
-   CHAPTER 2 (FIXED + CLEAN)
+   CHAPTER 2
 ========================== */
 
 #ch2 .ch2-roots,
