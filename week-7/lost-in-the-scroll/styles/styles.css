@@ -148,15 +148,14 @@ body {
   align-items: flex-start;
 }
 
-/* ✅ adjusted seed packet */
+/* adjusted seed packet */
 #ch1 .chapter-visual img[alt="A seed packet"] {
   position: absolute;
-  width: 55%;
-  right: 4%;
-  top: 8%;
-  bottom: auto;
-  transform: rotate(-14deg);
-  transform-origin: top right;
+  width: 40%;
+  left: 10%;   
+  top: 18%; 
+  transform: rotate(14deg);
+  transform-origin: top left;
 }
 
 /* seeds cluster */
