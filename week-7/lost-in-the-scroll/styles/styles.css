@@ -141,14 +141,12 @@ body {
   object-fit: contain;
 }
 
-/* =========================
-   ch1
-========================== */
+/* ch1 */
 #ch1 .chapter-visual img[alt="A seed packet"] {
   position: absolute;
   width: 40%;
   left: 10%;
-  top: 18%;
+  top: 15%;
   transform: rotate(14deg);
   transform-origin: top left;
 }
