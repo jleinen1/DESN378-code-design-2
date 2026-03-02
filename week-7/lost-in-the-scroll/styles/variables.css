@@ -1,1 +1,49 @@
+:root {
 
+  /* =========================
+     COLOR TOKENS
+  ========================== */
+
+  /* Surfaces */
+  --color-surface-primary: #E8E1D9;   /* soil-200 */
+  --color-surface-secondary: #D3EEFF; /* sky-300 */
+  --color-surface-dark: #243743;      /* sky-800 */
+
+  /* Text */
+  --color-text-primary: #3A2F2A;      /* soil-800 */
+  --color-text-inverse: #E8F3ED;      /* green-100 */
+  --color-text-accent: #2F4F3A;       /* green-700 */
+
+  /* Accent */
+  --color-accent-warm: #F3D6D0;       /* rose-200 */
+  --color-accent-gold: #DEC978;       /* yellow-300 */
+
+  /* =========================
+     TYPOGRAPHY TOKENS
+  ========================== */
+
+  --font-heading: "DM Serif Display", serif;
+  --font-body: "IBM Plex Sans", sans-serif;
+
+  --text-h1: clamp(3rem, 6vw, 4rem);      /* 64px */
+  --text-h2: clamp(2rem, 4vw, 2.5rem);    /* 40px */
+  --text-h3: 1.375rem;                    /* 22px */
+  --text-body: 1.125rem;                  /* 18px */
+  --text-label: 2.5rem;                   /* 40px */
+
+  /* =========================
+     SPACING TOKENS
+  ========================== */
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+
+  /* =========================
+     TRANSITIONS
+  ========================== */
+
+  --transition-default: 200ms ease;
+}
