@@ -174,10 +174,10 @@ body {
   z-index: 1;
 }
 
-#ch2 .ch2-roots {
-  width: 33%;
-  right: 18%;
-  bottom: 0;
+#ch2 .ch2-sprout {
+  width: 12%;
+  right: 10%;
+  bottom: 40%;
 }
 
 #ch2 .ch2-roots img {
