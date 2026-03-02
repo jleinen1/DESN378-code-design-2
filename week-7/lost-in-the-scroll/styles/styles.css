@@ -141,24 +141,24 @@ body {
   object-fit: contain;
 }
 
-/* chapter 1 */
+/* =========================
+   CHAPTER 1
+========================== */
 #ch1 .chapter-visual {
   position: relative;
   z-index: 1;
   align-items: flex-start;
 }
 
-/* adjusted seed packet */
 #ch1 .chapter-visual img[alt="A seed packet"] {
   position: absolute;
   width: 40%;
-  left: 10%;   
-  top: 18%; 
+  left: 10%;
+  top: 18%;
   transform: rotate(14deg);
   transform-origin: top left;
 }
 
-/* seeds cluster */
 #ch1 .chapter-visual img[alt="seeds"] {
   position: absolute;
   width: 9%;
@@ -166,7 +166,10 @@ body {
   top: 44%;
 }
 
-/* ch2 */
+/* =========================
+   CHAPTER 2 (FIXED + CLEAN)
+========================== */
+
 #ch2 .ch2-roots,
 #ch2 .ch2-sprout,
 #ch2 .drops {
@@ -174,10 +177,11 @@ body {
   z-index: 1;
 }
 
-#ch2 .ch2-sprout {
-  width: 12%;
-  right: 10%;
-  bottom: 40%;
+/* Roots anchored far right */
+#ch2 .ch2-roots {
+  width: 35%;
+  right: 0;
+  bottom: 0;
 }
 
 #ch2 .ch2-roots img {
@@ -185,10 +189,12 @@ body {
   display: block;
 }
 
+/* Sprout centered perfectly on roots */
 #ch2 .ch2-sprout {
   width: 12%;
-  right: 18%;
-  bottom: 44%;
+  right: 17.5%; /* half of 35% */
+  bottom: 46%;
+  transform: translateX(50%);
 }
 
 #ch2 .ch2-sprout img {
@@ -196,6 +202,7 @@ body {
   display: block;
 }
 
+/* water drops */
 #ch2 .drops {
   display: flex;
   gap: 2.5%;
@@ -212,7 +219,10 @@ body {
 #ch2 .drops img:nth-child(2) { margin-top: 3rem; }
 #ch2 .drops img:nth-child(3) { margin-top: 1rem; }
 
-/* ch3 */
+/* =========================
+   CHAPTER 3
+========================== */
+
 #ch3 .ch3-roots,
 #ch3 .ch3-watering-can,
 #ch3 .ch3-drop {
@@ -242,7 +252,6 @@ body {
   display: block;
 }
 
-/* ✅ adjusted raindrop */
 #ch3 .ch3-drop {
   width: 4%;
   right: 23%;
@@ -254,7 +263,10 @@ body {
   display: block;
 }
 
-/* ch5 */
+/* =========================
+   CHAPTER 5
+========================== */
+
 #ch5 .chapter-visual {
   position: relative;
   z-index: 1;
@@ -278,7 +290,10 @@ body {
   z-index: 2;
 }
 
-/* responsive */
+/* =========================
+   RESPONSIVE
+========================== */
+
 @media (max-width: 768px) {
   .chapter {
     grid-template-columns: 1fr;
