@@ -42,8 +42,7 @@ body {
 }
 
 /* =========================
-   chapter frames layout
-   1440×1024 base frame
+   chap frames layout
 ========================== */
 .chapter {
   min-height: 100vh;
@@ -74,7 +73,7 @@ body {
   );
 }
 
-/* let side text */
+/* left side text */
 .chapter-text {
   position: relative;
   z-index: 1;
@@ -142,33 +141,32 @@ body {
   object-fit: contain;
 }
 
-/* chapter 1: seeds */
+/* chapter 1 */
 #ch1 .chapter-visual {
   position: relative;
   z-index: 1;
 }
 
-/* seed-bag */
+/* ✅ adjusted seed packet */
 #ch1 .chapter-visual img[alt="A seed packet"] {
   position: absolute;
   width: 55%;
-  right: -2%;
-  bottom: 2%;
+  right: 4%;
+  top: 8%;
+  bottom: auto;
   transform: rotate(-14deg);
-  transform-origin: bottom right;
+  transform-origin: top right;
 }
 
 /* seeds cluster */
 #ch1 .chapter-visual img[alt="seeds"] {
   position: absolute;
-  width: 9%;           /* 80px / ~900px right-half at 1440 */
+  width: 9%;
   left: 14%;
   top: 44%;
 }
 
-/* ch2: variables */
-
-/* sprouts layout */
+/* ch2 */
 #ch2 .ch2-roots,
 #ch2 .ch2-sprout,
 #ch2 .drops {
@@ -176,12 +174,8 @@ body {
   z-index: 1;
 }
 
-/* roots+sprout — centered in right half.
-   Right half starts at 50% of frame.
-   718px / 1440px ≈ 50% width.
-   Center of right half = 75% from left. */
 #ch2 .ch2-roots {
-  width: 33%;          /* 718 / 1440 * ~68% = fits nicely */
+  width: 33%;
   right: 8%;
   bottom: 0;
 }
@@ -191,14 +185,10 @@ body {
   display: block;
 }
 
-/* sprout is a separate asset layered
-   on top of roots at the stem junction.
-   Adjust top/left to align with your
-   specific root svg's stem position. */
 #ch2 .ch2-sprout {
   width: 12%;
-  right: 22%;          /* tune to align with root stem */
-  bottom: 49%;         /* tune to sit just above soil line */
+  right: 22%;
+  bottom: 49%;
 }
 
 #ch2 .ch2-sprout img {
@@ -206,7 +196,6 @@ body {
   display: block;
 }
 
-/* three drops */
 #ch2 .drops {
   display: flex;
   gap: 2.5%;
@@ -215,36 +204,33 @@ body {
 }
 
 #ch2 .drops img {
-  width: 42px;         /* natural 79.93 scaled down ~50% */
+  width: 42px;
   display: block;
 }
 
-/* stagger vertical positions of drops */
 #ch2 .drops img:nth-child(1) { margin-top: 0rem; }
 #ch2 .drops img:nth-child(2) { margin-top: 3rem; }
 #ch2 .drops img:nth-child(3) { margin-top: 1rem; }
 
-/* ch3: conditionals */
-
+/* ch3 */
 #ch3 .ch3-roots,
 #ch3 .ch3-watering-can,
 #ch3 .ch3-drop {
-position: absolute;
-z-index: 1;
+  position: absolute;
+  z-index: 1;
 }
 
 #ch3 .ch3-roots {
-width: 33%;
-right: 8%;
-bottom: 0;
+  width: 33%;
+  right: 8%;
+  bottom: 0;
 }
 
 #ch3 .ch3-roots img {
-width: 100%;
-display: block;
+  width: 100%;
+  display: block;
 }
 
-/* watering-can */
 #ch3 .ch3-watering-can {
   width: 21%;
   right: 5%;
@@ -256,10 +242,10 @@ display: block;
   display: block;
 }
 
-/* single drop below the can spout */
+/* ✅ adjusted raindrop */
 #ch3 .ch3-drop {
-  width: 3%;    
-  right: 19%;
+  width: 4%;
+  right: 23%;
   top: 32%;
 }
 
@@ -268,13 +254,12 @@ display: block;
   display: block;
 }
 
-/* ch5: bloom  */
+/* ch5 */
 #ch5 .chapter-visual {
   position: relative;
   z-index: 1;
 }
 
-/* roots behind flower */
 #ch5 .chapter-visual img[alt="roots"] {
   position: absolute;
   width: 40%;
@@ -284,11 +269,10 @@ display: block;
   z-index: 1;
 }
 
-/* flower centered above, z on top */
 #ch5 .chapter-visual img[alt="A flower in full bloom with roots"] {
   position: absolute;
   width: 28%;
-  bottom: 42%;         /* just above soil line at 45% from bottom */
+  bottom: 42%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
@@ -305,22 +289,21 @@ display: block;
     padding: var(--space-lg) var(--space-md) var(--space-md);
   }
 
-  /* stacking for mobile */
   .chapter-visual {
     min-height: 320px;
   }
 
-#ch1 .chapter-visual img[alt="A seed packet"] {
-position: absolute;
-width: 55%;
-right: 4%;
-top: 8%;
-transform: rotate(-14deg);
-transform-origin: top right;
-}
+  #ch1 .chapter-visual img[alt="A seed packet"] {
+    position: absolute;
+    width: 55%;
+    right: 4%;
+    top: 8%;
+    transform: rotate(-14deg);
+    transform-origin: top right;
+  }
 
   #ch1 .chapter-visual img[alt="seeds"] {
-  display: none;
+    display: none;
   }
 
   #ch2 .ch2-roots,
