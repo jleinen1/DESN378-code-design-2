@@ -1,1 +1,36 @@
+body {
+  margin: 0;
+  background: var(--color-surface-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: 1.6;
+}
 
+h1, h2 {
+  font-family: var(--font-heading);
+  margin: 0 0 var(--space-md);
+}
+
+h1 {
+  font-size: var(--text-h1);
+}
+
+h2 {
+  font-size: var(--text-h2);
+}
+
+h3 {
+  font-family: var(--font-body);
+  font-size: var(--text-h3);
+  margin-bottom: var(--space-sm);
+}
+
+.animation-label {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+}
+
+p {
+  max-width: 60ch;
+}
