@@ -42,7 +42,7 @@ body {
 }
 
 /* =========================
-   chap frames layout
+   chapter frames layout
 ========================== */
 .chapter {
   min-height: 100vh;
@@ -142,19 +142,13 @@ body {
 }
 
 /* =========================
-   CHAPTER 1
+   ch1
 ========================== */
-#ch1 .chapter-visual {
-  position: relative;
-  z-index: 1;
-  align-items: flex-start;
-}
-
 #ch1 .chapter-visual img[alt="A seed packet"] {
   position: absolute;
   width: 40%;
   left: 10%;
-  top: 16%;
+  top: 18%;
   transform: rotate(14deg);
   transform-origin: top left;
 }
@@ -167,9 +161,8 @@ body {
 }
 
 /* =========================
-   CHAPTER 2
+   ch2
 ========================== */
-
 #ch2 .ch2-roots,
 #ch2 .ch2-sprout,
 #ch2 .drops {
@@ -177,32 +170,24 @@ body {
   z-index: 1;
 }
 
-/* Roots anchored far right */
 #ch2 .ch2-roots {
-  width: 35%;
-  right: 0;
+  width: 33%;
+  right: 8%;
   bottom: 0;
 }
 
-#ch2 .ch2-roots img {
-  width: 100%;
-  display: block;
-}
-
-/* Sprout centered perfectly on roots */
-#ch2 .ch2-sprout {
-  width: 12%;
-  right: 17.5%; /* half of 35% */
-  bottom: 46%;
-  transform: translateX(50%);
-}
-
+#ch2 .ch2-roots img,
 #ch2 .ch2-sprout img {
   width: 100%;
   display: block;
 }
 
-/* water drops */
+#ch2 .ch2-sprout {
+  width: 12%;
+  right: 18%;
+  bottom: 44%;
+}
+
 #ch2 .drops {
   display: flex;
   gap: 2.5%;
@@ -212,7 +197,6 @@ body {
 
 #ch2 .drops img {
   width: 42px;
-  display: block;
 }
 
 #ch2 .drops img:nth-child(1) { margin-top: 0rem; }
@@ -220,10 +204,10 @@ body {
 #ch2 .drops img:nth-child(3) { margin-top: 1rem; }
 
 /* =========================
-   CHAPTER 3
+   ch3
 ========================== */
-
 #ch3 .ch3-roots,
+#ch3 .ch3-sprout,
 #ch3 .ch3-watering-can,
 #ch3 .ch3-drop {
   position: absolute;
@@ -236,9 +220,16 @@ body {
   bottom: 0;
 }
 
-#ch3 .ch3-roots img {
+#ch3 .ch3-roots img,
+#ch3 .ch3-sprout img {
   width: 100%;
   display: block;
+}
+
+#ch3 .ch3-sprout {
+  width: 12%;
+  right: 18%;
+  bottom: 44%;
 }
 
 #ch3 .ch3-watering-can {
@@ -252,6 +243,7 @@ body {
   display: block;
 }
 
+/* slightly bigger raindrop, left of can */
 #ch3 .ch3-drop {
   width: 4%;
   right: 23%;
@@ -264,14 +256,8 @@ body {
 }
 
 /* =========================
-   CHAPTER 5
+   ch5
 ========================== */
-
-#ch5 .chapter-visual {
-  position: relative;
-  z-index: 1;
-}
-
 #ch5 .chapter-visual img[alt="roots"] {
   position: absolute;
   width: 40%;
@@ -291,9 +277,8 @@ body {
 }
 
 /* =========================
-   RESPONSIVE
+   responsive
 ========================== */
-
 @media (max-width: 768px) {
   .chapter {
     grid-template-columns: 1fr;
@@ -308,6 +293,7 @@ body {
     min-height: 320px;
   }
 
+  /* ch1 seed packet */
   #ch1 .chapter-visual img[alt="A seed packet"] {
     position: absolute;
     width: 55%;
@@ -321,6 +307,7 @@ body {
     display: none;
   }
 
+  /* ch2 & ch3 stacking */
   #ch2 .ch2-roots,
   #ch3 .ch3-roots {
     position: relative;
@@ -330,7 +317,8 @@ body {
     margin: var(--space-md) auto 0;
   }
 
-  #ch2 .ch2-sprout { display: none; }
+  #ch2 .ch2-sprout,
+  #ch3 .ch3-sprout { display: none; }
 
   #ch2 .drops {
     position: relative;
