@@ -256,7 +256,25 @@ body {
 /* =========================
    ch4
 ========================== */
+#ch4 .chapter-visual img {
+  position: absolute;
+  width: 33%;
+  right: 8%;
+  bottom: 0;
+}
 
+#ch4 .sprout {
+  position: absolute;
+  z-index: 1;
+  width: 12%;
+  right: 18%;
+  bottom: 44%;
+}
+
+#ch4 .sprout img {
+  width: 100%;
+  display: block;
+}
 
 /* =========================
    ch5
